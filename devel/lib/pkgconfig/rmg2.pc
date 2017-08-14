@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/rmg2-Drone/src/rmg2/devel
+
+Name: rmg2
+Description: Description of rmg2
+Version: 0.0.0
+Cflags: -I/home/ubuntu/rmg2-Drone/src/rmg2/devel/include
+Libs: -L/home/ubuntu/rmg2-Drone/src/rmg2/devel/lib 
+Requires: message_runtime geometry_msgs roscpp rospy std_msgs

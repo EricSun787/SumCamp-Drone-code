@@ -1,0 +1,15 @@
+<launch>
+	<node pkg="dji_sdk" type="dji_sdk_node" name="dji_sdk" output="screen">
+		<!-- node parameters -->
+		<param name="serial_name" type="string" value="/dev/THS1"/>
+		<param name="baud_rate"   type="int"    value="230400"/>
+		<param name="app_id"	  type="int"    value="1043704"/>
+		<param name="app_version" type="int"    value="1"/>
+		<param name="app_bundle_id" type="string" value="Not required in this SDK version"/>
+		<param name="enc_key"     type="string" value="784cda5d3c226f9f929d1072655950d5f3306923d6e035bcd3c3c9160ca478dd"/>
+		<param name="groundstation_enable" type="int" value="1"/>
+        </node>
+  
+        <node pkg="guidance" type="guidanceNode" name="guidanceNode"  output="screen" />
+	<node pkg="rmg2" type="PIDx_test" name="rmg2"  output="screen" />
+</launch>
